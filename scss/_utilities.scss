@@ -1,0 +1,22 @@
+.container {
+   width: 85%;
+   max-width: 1220px;
+   margin: auto;
+}
+
+@mixin easeOut {
+   transition: all ease-out 0.3s;
+}
+
+li {
+   list-style: none;
+}
+
+img {
+   width: 100%;
+}
+
+a {
+   color: #333;
+   text-decoration: none;
+}
