@@ -146,11 +146,32 @@ header {
    }
 
    .showcase-img {
+      height: 400px;
+      position: relative;
+
       img {
-         height: 400px;
+         height: 100%;
          width: 100%;
          border-radius: $border-radius;
          cursor: pointer;
+      }
+
+      button {
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         padding: 0.6rem 1rem;
+         margin-left: 1rem;
+         border: none;
+         outline: none;
+         background-color: $secondary-color;
+         color: $light-color;
+         cursor: pointer;
+         @include easeOut;
+
+         &:hover {
+            background-color: darken($secondary-color, 2%);
+         }
       }
    }
 
@@ -206,6 +227,7 @@ header {
       box-shadow: 0 0 5px 1px darken($primary-color, 10%);
       display: flex;
       align-items: center;
+      border-radius: $border-radius;
 
       i {
          margin-right: 1rem;
@@ -237,5 +259,506 @@ header {
       i {
          background-color: $blue-color;
       }
+   }
+}
+
+// Top Selling Items Section
+.top-selling-section {
+   background-color: $light-color;
+   margin-top: 1rem;
+   padding: 1rem 0.5rem;
+   border-radius: $border-radius;
+
+   h3 {
+      margin-bottom: 1rem;
+   }
+
+   .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 2rem;
+
+      .product {
+         background-color: $light-color;
+         cursor: pointer;
+         border-radius: $border-radius;
+         @include easeOut;
+         position: relative;
+
+         h6 {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            background-color: lighten($secondary-color, 30%);
+            color: $secondary-color;
+            padding: 0.3rem;
+            border-radius: $border-radius;
+         }
+
+         .details {
+            padding: 0.5rem;
+
+            small {
+               margin-bottom: 0.5rem;
+            }
+         }
+
+         &:hover {
+            box-shadow: 0 0 5px 1px darken($primary-color, 10%);
+
+            img {
+               border-radius: $border-radius;
+            }
+         }
+      }
+   }
+}
+
+// 1 K Section
+.one-k-section {
+   background-color: $light-color;
+   margin-top: 1rem;
+   border-radius: $border-radius;
+
+   .section-head {
+      background-color: $secondary-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      margin-bottom: 0.5rem;
+
+      div,
+      div a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         h5 {
+            text-transform: uppercase;
+         }
+
+         i {
+            margin-left: 1rem;
+         }
+      }
+   }
+
+   .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 2rem;
+      padding: 0 0.5rem;
+
+      .product {
+         background-color: $light-color;
+         cursor: pointer;
+         border-radius: $border-radius;
+         position: relative;
+         @include easeOut;
+
+         h6 {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            background-color: lighten($secondary-color, 30%);
+            color: $secondary-color;
+            padding: 0.3rem;
+            border-radius: $border-radius;
+         }
+
+         .details {
+            padding: 0.5rem;
+
+            small {
+               margin-bottom: 0.5rem;
+            }
+         }
+
+         &:hover {
+            box-shadow: 0 0 5px 1px darken($primary-color, 10%);
+
+            img {
+               border-radius: $border-radius;
+            }
+         }
+      }
+   }
+}
+
+// Collection Section
+.collection-section {
+   background-color: $light-color;
+   margin-top: 1rem;
+   padding: 1rem 0.5rem;
+   border-radius: $border-radius;
+
+   h3 {
+      margin-bottom: 1rem;
+   }
+
+   .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 2rem;
+
+      .product {
+         background-color: $light-color;
+         cursor: pointer;
+         border-radius: $border-radius;
+         @include easeOut;
+         position: relative;
+
+         h6 {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            background-color: lighten($secondary-color, 30%);
+            color: $secondary-color;
+            padding: 0.3rem;
+            border-radius: $border-radius;
+         }
+
+         .details {
+            padding: 0.5rem;
+
+            small {
+               margin-bottom: 0.5rem;
+            }
+         }
+
+         &:hover {
+            box-shadow: 0 0 5px 1px darken($primary-color, 10%);
+
+            img {
+               border-radius: $border-radius;
+            }
+         }
+      }
+   }
+}
+
+// Advertisement Section
+.advertisement-section {
+   background-color: $light-color;
+   margin-top: 1rem;
+   padding: 0.5rem;
+   border-radius: $border-radius;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+
+   .advert {
+      position: relative;
+
+      div {
+         position: absolute;
+         bottom: 15%;
+         left: 5%;
+
+         h3 {
+         }
+
+         button {
+            padding: 0.6rem 1rem;
+            border: none;
+            outline: none;
+            background-color: $secondary-color;
+            color: $light-color;
+            border-radius: $border-radius;
+            margin-top: 1rem;
+            cursor: pointer;
+            @include easeOut;
+
+            &:hover {
+               background-color: darken($secondary-color, 2%);
+            }
+         }
+      }
+   }
+
+   .customer-care {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+
+      span {
+         color: $secondary-color;
+      }
+   }
+
+   img {
+      height: 300px;
+   }
+}
+
+.second {
+   .advert {
+      position: relative;
+
+      div {
+         position: absolute;
+         color: $light-color;
+         font-size: 1.5rem;
+         top: 10%;
+         left: 5%;
+
+         h3 {
+         }
+
+         button {
+            position: absolute;
+            bottom: 1%;
+
+            &:hover {
+               background-color: darken($secondary-color, 2%);
+            }
+         }
+      }
+   }
+}
+
+// Deals of the Day Section
+.deals-section {
+   background-color: $light-color;
+   margin-top: 1rem;
+   border-radius: $border-radius;
+
+   .section-head {
+      background-color: $danger-color;
+      color: $light-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      margin-bottom: 0.5rem;
+
+      a {
+         color: $light-color;
+      }
+
+      div,
+      div a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         h5 {
+            text-transform: uppercase;
+         }
+
+         i {
+            margin-left: 1rem;
+         }
+      }
+   }
+
+   .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 2rem;
+      padding: 0 0.5rem;
+
+      .product {
+         background-color: $light-color;
+         cursor: pointer;
+         border-radius: $border-radius;
+         position: relative;
+         @include easeOut;
+
+         h6 {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            background-color: lighten($secondary-color, 30%);
+            color: $secondary-color;
+            padding: 0.3rem;
+            border-radius: $border-radius;
+         }
+
+         .details {
+            padding: 0.5rem;
+
+            small {
+               margin-bottom: 0.5rem;
+            }
+         }
+
+         &:hover {
+            box-shadow: 0 0 5px 1px darken($primary-color, 10%);
+
+            img {
+               border-radius: $border-radius;
+            }
+         }
+      }
+   }
+}
+
+// Featured Section
+.featured-section {
+   background-color: $light-color;
+   margin-top: 1rem;
+   padding: 1rem 0.5rem;
+   border-radius: $border-radius;
+
+   h3 {
+      margin-bottom: 1rem;
+   }
+
+   .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 2rem;
+
+      .product {
+         background-color: $light-color;
+         cursor: pointer;
+         border-radius: $border-radius;
+         @include easeOut;
+         position: relative;
+
+         h6 {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            background-color: lighten($secondary-color, 30%);
+            color: $secondary-color;
+            padding: 0.3rem;
+            border-radius: $border-radius;
+         }
+
+         .details {
+            padding: 0.5rem;
+
+            small {
+               margin-bottom: 0.5rem;
+            }
+         }
+
+         &:hover {
+            box-shadow: 0 0 5px 1px darken($primary-color, 10%);
+
+            img {
+               border-radius: $border-radius;
+            }
+         }
+      }
+   }
+}
+
+// Electronic Section
+.electronic-section {
+   background-color: $light-color;
+   margin-top: 1rem;
+   border-radius: $border-radius;
+
+   .section-head {
+      background-color: $blue-color;
+      color: $light-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      margin-bottom: 0.5rem;
+
+      a {
+         color: $light-color;
+      }
+
+      div,
+      div a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         h5 {
+            text-transform: uppercase;
+         }
+
+         i {
+            margin-left: 1rem;
+         }
+      }
+   }
+
+   .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 2rem;
+      padding: 0 0.5rem;
+
+      .product {
+         background-color: $light-color;
+         cursor: pointer;
+         border-radius: $border-radius;
+         position: relative;
+         @include easeOut;
+
+         h6 {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            background-color: lighten($secondary-color, 30%);
+            color: $secondary-color;
+            padding: 0.3rem;
+            border-radius: $border-radius;
+         }
+
+         .details {
+            padding: 0.5rem;
+
+            small {
+               margin-bottom: 0.5rem;
+            }
+         }
+
+         &:hover {
+            box-shadow: 0 0 5px 1px darken($primary-color, 10%);
+
+            img {
+               border-radius: $border-radius;
+            }
+         }
+      }
+   }
+}
+
+// About Section
+.about-section {
+   background-color: $light-color;
+   margin-top: 1rem;
+   border-radius: $border-radius;
+   padding: 1rem;
+
+   h4 {
+      margin-bottom: 1rem;
+   }
+}
+
+// Footer
+footer {
+   background-color: $dark-color;
+   color: $light-color;
+   display: grid;
+   grid-template-columns: 1fr 3fr 1fr;
+
+   .footer-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+         font-size: 2rem;
+      }
+   }
+   img {
+      width: 40px;
    }
 }
