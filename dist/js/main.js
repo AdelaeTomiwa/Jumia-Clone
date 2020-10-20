@@ -37,3 +37,273 @@ function changeImg() {
 }
 
 window.onload = changeImg;
+
+// Adding Products
+
+// UI CLASS
+class UI {
+   // TOP DEALS SECTION
+   static displayTopSellingSection(deal) {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+      productDiv.innerHTML = `
+               <h6>-30%</h6>
+               <img src="${deal.img}" alt="${deal.title}"/>
+               <div class="details">
+                  <small>${deal.title}</small>
+                  <h4>${deal.reducedPrice}</h4>
+                  <small>${deal.price}</small>
+               </div>
+            `;
+
+      // Append to the TOP SECTION DEALS IN THE HTML
+      topSellingSection.appendChild(productDiv);
+   }
+
+   // LESS THAN ONE K SECTION
+   static displayLessThanOneKSection(deal) {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+      productDiv.innerHTML = `
+               <h6>-30%</h6>
+               <img src="${deal.img}" alt="${deal.title}"/>
+               <div class="details">
+                  <small>${deal.title}</small>
+                  <h4>${deal.reducedPrice}</h4>
+                  <small>${deal.price}</small>
+               </div>
+            `;
+
+      // Append to the TOP SECTION DEALS IN THE HTML
+      lessThanOneK.appendChild(productDiv);
+   }
+
+   // COLLECTION SECTION
+   static displayCollectionSection(deal) {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+      productDiv.innerHTML = `
+               <h6>-30%</h6>
+               <img src="${deal.img}" alt="${deal.title}"/>
+               <div class="details">
+                  <small>${deal.title}</small>
+                  <h4>${deal.reducedPrice}</h4>
+                  <small>${deal.price}</small>
+               </div>
+            `;
+
+      // Append to the TOP SECTION DEALS IN THE HTML
+      collectionSection.appendChild(productDiv);
+   }
+
+   // DEALS OF THE DAY SECTION
+   static displayDealsOfTheDay(deal) {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+      productDiv.innerHTML = `
+               <h6>-30%</h6>
+               <img src="${deal.img}" alt="${deal.title}"/>
+               <div class="details">
+                  <small>${deal.title}</small>
+                  <h4>${deal.reducedPrice}</h4>
+                  <small>${deal.price}</small>
+               </div>
+            `;
+
+      // Append to the TOP SECTION DEALS IN THE HTML
+      dealsOfTheDay.appendChild(productDiv);
+   }
+
+   // FEATURED SECTION
+   static displayFeaturedSection(deal) {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+      productDiv.innerHTML = `
+               <h6>-30%</h6>
+               <img src="${deal.img}" alt="${deal.title}"/>
+               <div class="details">
+                  <small>${deal.title}</small>
+                  <h4>${deal.reducedPrice}</h4>
+                  <small>${deal.price}</small>
+               </div>
+            `;
+
+      // Append to the TOP SECTION DEALS IN THE HTML
+      featuredSection.appendChild(productDiv);
+   }
+
+   // ELECTRONIC SECTION COMPUTING
+   static displayElectronicSectionComputing(deal) {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+      productDiv.innerHTML = `
+               <h6>-30%</h6>
+               <img src="${deal.img}" alt="${deal.title}"/>
+               <div class="details">
+                  <small>${deal.title}</small>
+                  <h4>${deal.reducedPrice}</h4>
+                  <small>${deal.price}</small>
+               </div>
+            `;
+
+      // Append to the TOP SECTION DEALS IN THE HTML
+      electronicWareHouseComputing.appendChild(productDiv);
+   }
+
+   // ELECTRONIC SECTION PHONE
+   static displayElectronicSectionPhone(deal) {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+      productDiv.innerHTML = `
+               <h6>-30%</h6>
+               <img src="${deal.img}" alt="${deal.title}"/>
+               <div class="details">
+                  <small>${deal.title}</small>
+                  <h4>${deal.reducedPrice}</h4>
+                  <small>${deal.price}</small>
+               </div>
+            `;
+
+      // Append to the TOP SECTION DEALS IN THE HTML
+      electronicWareHousePhone.appendChild(productDiv);
+   }
+
+   // MEGA CLEARANCE
+   static displayMegaClearance(deal) {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+      productDiv.innerHTML = `
+               <h6>-30%</h6>
+               <img src="${deal.img}" alt="${deal.title}"/>
+               <div class="details">
+                  <small>${deal.title}</small>
+                  <h4>${deal.reducedPrice}</h4>
+                  <small>${deal.price}</small>
+               </div>
+            `;
+
+      // Append to the TOP SECTION DEALS IN THE HTML
+      megaClearance.appendChild(productDiv);
+   }
+}
+
+// STORAGE CLASS
+
+// Selectors
+const topSellingSection = document.querySelector(
+   '.top-selling-section .products'
+);
+const lessThanOneK = document.querySelector('.one-k-section .products');
+const collectionSection = document.querySelector(
+   '.collection-section .products'
+);
+const dealsOfTheDay = document.querySelector('.deals-section .products');
+const featuredSection = document.querySelector('.featured-section .products');
+const electronicWareHouseComputing = document.querySelector(
+   '.computing .products'
+);
+const electronicWareHousePhone = document.querySelector('.phone .products');
+const megaClearance = document.querySelector('.mega-clearance .products');
+
+// EVENTS
+document.addEventListener('DOMContentLoaded', displayTopSellingSection);
+document.addEventListener('DOMContentLoaded', displayLessThanOneKSection);
+document.addEventListener('DOMContentLoaded', displayCollectionSection);
+document.addEventListener('DOMContentLoaded', displayDealsOfTheDay);
+document.addEventListener('DOMContentLoaded', displayFeaturedSection);
+document.addEventListener(
+   'DOMContentLoaded',
+   displayElectronicSectionComputing
+);
+document.addEventListener('DOMContentLoaded', displayElectronicSectionPhone);
+document.addEventListener('DOMContentLoaded', displayMegaClearanceSection);
+
+// FUNCTIONS
+
+// TOP SELLING SECTION
+function displayTopSellingSection() {
+   fetch('products/topDeals.json')
+      .then((res) => res.json())
+      .then((data) => {
+         data.forEach((deal) => {
+            UI.displayTopSellingSection(deal);
+         });
+      });
+}
+
+// LESS THAN ONE K SECTION
+function displayLessThanOneKSection() {
+   fetch('products/lessThanOneK.json')
+      .then((res) => res.json())
+      .then((data) => {
+         data.forEach((deal) => {
+            UI.displayLessThanOneKSection(deal);
+         });
+      });
+}
+
+// COLLECTION SECTION
+function displayCollectionSection() {
+   fetch('products/collection.json')
+      .then((res) => res.json())
+      .then((data) => {
+         data.forEach((deal) => {
+            UI.displayCollectionSection(deal);
+         });
+      });
+}
+
+// DEALS OF THE DAY SECTION
+function displayDealsOfTheDay() {
+   fetch('products/dealsOfTheDay.json')
+      .then((res) => res.json())
+      .then((data) => {
+         data.forEach((deal) => {
+            UI.displayDealsOfTheDay(deal);
+         });
+      });
+}
+
+// FEATURED SECTION
+function displayFeaturedSection() {
+   fetch('products/featuredCategories.json')
+      .then((res) => res.json())
+      .then((data) => {
+         data.forEach((deal) => {
+            UI.displayFeaturedSection(deal);
+         });
+      });
+}
+
+// ELECTRONIC SECTION COMPUTING
+function displayElectronicSectionComputing() {
+   fetch('products/electronicForComputing.json')
+      .then((res) => res.json())
+      .then((data) => {
+         data.forEach((deal) => {
+            UI.displayElectronicSectionComputing(deal);
+         });
+      });
+}
+
+// ELECTRONIC SECTION PHONE
+function displayElectronicSectionPhone() {
+   fetch('products/electronicForPhone.json')
+      .then((res) => res.json())
+      .then((data) => {
+         data.forEach((deal) => {
+            UI.displayElectronicSectionPhone(deal);
+         });
+      });
+}
+
+// MEGA CLEARANCE
+function displayMegaClearanceSection() {
+   fetch('products/megaClearance.json')
+      .then((res) => res.json())
+      .then((data) => {
+         data.forEach((deal) => {
+            UI.displayMegaClearance(deal);
+         });
+      });
+}

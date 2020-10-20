@@ -1,0 +1,26 @@
+[
+   {
+      "title" : "Mamador COOKING OIL",
+      "reducedPrice":"&#8358; 750",
+      "price":"&#8358; 1,500",
+      "img":"https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+   },
+   {
+      "title" : "Eva Water 50cl X 12pcs",
+      "reducedPrice":"&#8358; 650",
+      "price":"&#8358; 780",
+      "img":"https://images.pexels.com/photos/1042143/pexels-photo-1042143.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+   },
+   {
+      "title" : "Kotex Everyday Panty",
+      "reducedPrice":"&#8358; 190",
+      "price":"&#8358; 490",
+      "img":"https://images.pexels.com/photos/292999/pexels-photo-292999.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+   },
+   {
+      "title" : "Tomato 6pcs",
+      "reducedPrice":"&#8358; 600",
+      "price":"&#8358; 2200",
+      "img":"https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+   }
+]
