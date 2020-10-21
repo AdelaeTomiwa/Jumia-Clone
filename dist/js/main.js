@@ -47,7 +47,7 @@ class UI {
       const productDiv = document.createElement('div');
       productDiv.classList.add('product');
       productDiv.innerHTML = `
-         <a href ="https://jumia.com/${deal.title}.com">
+         <a >
             <h6>-30%</h6>
             <img src="${deal.img}" alt="${deal.title}"/>
             <div class="details">
@@ -60,6 +60,13 @@ class UI {
 
       // Append to the TOP SECTION DEALS IN THE HTML
       topSellingSection.appendChild(productDiv);
+
+      productDiv.addEventListener('click', () => {
+         const productName =
+            productDiv.children[0].children[2].children[0].innerHTML;
+
+         location = 'product.html';
+      });
    }
 
    // LESS THAN ONE K SECTION
@@ -201,6 +208,23 @@ class UI {
       // Append to the TOP SECTION DEALS IN THE HTML
       megaClearance.appendChild(productDiv);
    }
+
+   static searchProduct() {
+      const searchText = searchInput.value.toLowerCase();
+
+      // Grab all th Product
+      const products = document.querySelectorAll('.product');
+      Array.from(products).forEach((product) => {
+         const productName =
+            product.children[0].children[2].children[0].textContent;
+
+         if (productName.toLowerCase().indexOf(searchText) != -1) {
+            product.style.opacity = '1';
+         } else {
+            product.style.opacity = '0.1';
+         }
+      });
+   }
 }
 
 // STORAGE CLASS
@@ -222,33 +246,32 @@ const electronicWareHousePhone = document.querySelector('.phone .products');
 const megaClearance = document.querySelector('.mega-clearance .products');
 
 // EVENTS
-document.addEventListener('DOMContentLoaded', displayTopSellingSection);
-document.addEventListener('DOMContentLoaded', displayLessThanOneKSection);
-document.addEventListener('DOMContentLoaded', displayCollectionSection);
-document.addEventListener('DOMContentLoaded', displayDealsOfTheDay);
-document.addEventListener('DOMContentLoaded', displayFeaturedSection);
-document.addEventListener(
-   'DOMContentLoaded',
-   displayElectronicSectionComputing
-);
-document.addEventListener('DOMContentLoaded', displayElectronicSectionPhone);
-document.addEventListener('DOMContentLoaded', displayMegaClearanceSection);
+window.addEventListener('load', displayTopSellingSectionFunction);
+window.addEventListener('load', displayLessThanOneKSectionFunction);
+window.addEventListener('load', displayCollectionSectionFunction);
+window.addEventListener('load', displayDealsOfTheDayFunction);
+window.addEventListener('load', displayElectronicSectionComputingFunction);
+window.addEventListener('load', displayElectronicSectionPhoneFunction);
+window.addEventListener('load', displayMegaClearanceSectionFunction);
+
+// window.addEventListener('click', productPage);
 
 // FUNCTIONS
 
 // TOP SELLING SECTION
-function displayTopSellingSection() {
+function displayTopSellingSectionFunction() {
    fetch('products/topDeals.json')
       .then((res) => res.json())
       .then((data) => {
          data.forEach((deal) => {
             UI.displayTopSellingSection(deal);
          });
-      });
+      })
+      .then();
 }
 
 // LESS THAN ONE K SECTION
-function displayLessThanOneKSection() {
+function displayLessThanOneKSectionFunction() {
    fetch('products/lessThanOneK.json')
       .then((res) => res.json())
       .then((data) => {
@@ -259,7 +282,7 @@ function displayLessThanOneKSection() {
 }
 
 // COLLECTION SECTION
-function displayCollectionSection() {
+function displayCollectionSectionFunction() {
    fetch('products/collection.json')
       .then((res) => res.json())
       .then((data) => {
@@ -270,7 +293,7 @@ function displayCollectionSection() {
 }
 
 // DEALS OF THE DAY SECTION
-function displayDealsOfTheDay() {
+function displayDealsOfTheDayFunction() {
    fetch('products/dealsOfTheDay.json')
       .then((res) => res.json())
       .then((data) => {
@@ -281,7 +304,7 @@ function displayDealsOfTheDay() {
 }
 
 // FEATURED SECTION
-function displayFeaturedSection() {
+function displayFeaturedSectionFunction() {
    fetch('products/featuredCategories.json')
       .then((res) => res.json())
       .then((data) => {
@@ -292,7 +315,7 @@ function displayFeaturedSection() {
 }
 
 // ELECTRONIC SECTION COMPUTING
-function displayElectronicSectionComputing() {
+function displayElectronicSectionComputingFunction() {
    fetch('products/electronicForComputing.json')
       .then((res) => res.json())
       .then((data) => {
@@ -303,7 +326,7 @@ function displayElectronicSectionComputing() {
 }
 
 // ELECTRONIC SECTION PHONE
-function displayElectronicSectionPhone() {
+function displayElectronicSectionPhoneFunction() {
    fetch('products/electronicForPhone.json')
       .then((res) => res.json())
       .then((data) => {
@@ -314,7 +337,7 @@ function displayElectronicSectionPhone() {
 }
 
 // MEGA CLEARANCE
-function displayMegaClearanceSection() {
+function displayMegaClearanceSectionFunction() {
    fetch('products/megaClearance.json')
       .then((res) => res.json())
       .then((data) => {
@@ -330,18 +353,16 @@ const searchInput = document.querySelector('.search-input');
 searchInput.addEventListener('keyup', searchProducts);
 
 function searchProducts(e) {
-   const searchText = searchInput.value.toLowerCase();
+   UI.searchProduct();
+}
 
-   // Grab all th Product
-   const products = document.querySelectorAll('.product');
-   Array.from(products).forEach((product) => {
-      const productName =
-         product.children[0].children[2].children[0].textContent;
-
-      if (productName.toLowerCase().indexOf(searchText) != -1) {
-         product.style.opacity = '1';
-      } else {
-         product.style.opacity = '0.1';
-      }
-   });
+// Grab all th Product
+function productPage() {
+   console.log('3');
+   // const products = document.querySelectorAll('.product');
+   // Array.from(products).forEach((product) => {
+   //    product.addEventListener('click', () => {
+   //       console.log('run');
+   //    });
+   // });
 }
