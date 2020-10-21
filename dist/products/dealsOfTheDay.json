@@ -1,26 +1,32 @@
 [
    {
-      "title" : "Mamador COOKING OIL",
-      "reducedPrice":"&#8358; 750",
-      "price":"&#8358; 1,500",
+      "title" : "Panasonic Deep Fridge",
+      "reducedPrice":"&#8358; 88,750",
+      "price":"&#8358; 102,500",
+      "img":"https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+   },
+   {
+      "title" : "Washing Machine",
+      "reducedPrice":"&#8358; 62,250",
+      "price":"&#8358; 72,880",
+      "img":"https://images.pexels.com/photos/4700383/pexels-photo-4700383.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+   },
+   {
+      "title" : "Air Max Sneakers",
+      "reducedPrice":"&#8358; 2,500 - &#8358; 5,900",
+      "price":"&#8358; 7,500",
+      "img":"https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+   },
+   {
+      "title" : "iPhone 6",
+      "reducedPrice":"&#8358; 7,600",
+      "price":"&#8358; 90,200",
+      "img":"https://images.pexels.com/photos/249324/pexels-photo-249324.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+   },
+   {
+      "title" : "SamSung A7 Pro",
+      "reducedPrice":"&#8358; 9,750",
+      "price":"&#8358; 101,500",
       "img":"https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-   },
-   {
-      "title" : "Eva Water 50cl X 12pcs",
-      "reducedPrice":"&#8358; 650",
-      "price":"&#8358; 780",
-      "img":"https://images.pexels.com/photos/1042143/pexels-photo-1042143.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-   },
-   {
-      "title" : "Kotex Everyday Panty",
-      "reducedPrice":"&#8358; 190",
-      "price":"&#8358; 490",
-      "img":"https://images.pexels.com/photos/292999/pexels-photo-292999.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-   },
-   {
-      "title" : "Tomato 6pcs",
-      "reducedPrice":"&#8358; 600",
-      "price":"&#8358; 2200",
-      "img":"https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
    }
 ]

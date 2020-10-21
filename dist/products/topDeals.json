@@ -6,7 +6,7 @@
       "img":"https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
    },
    {
-      "title" : "LG 4K TV",
+      "title" : "iPhone X Max",
       "reducedPrice":"&#8358; 41,500 - &#8358; 45,900",
       "price":"&#8358; 65,500",
       "img":"https://images.pexels.com/photos/1042143/pexels-photo-1042143.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -18,9 +18,15 @@
       "img":"https://images.pexels.com/photos/292999/pexels-photo-292999.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
    },
    {
-      "title" : "iPhone X",
-      "reducedPrice":"&#8358; 222,500 - &#8358; 250,900",
-      "price":"&#8358; 344,500",
-      "img":"https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      "title" : "Leather Men Wrist Watch",
+      "reducedPrice":"&#8358; 11,500 - &#8358; 12,900",
+      "price":"&#8358; 21,500",
+      "img":"https://images.pexels.com/photos/1120275/pexels-photo-1120275.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+   },
+   {
+      "title" : "Air Max Sneakers",
+      "reducedPrice":"&#8358; 2,500 - &#8358; 5,900",
+      "price":"&#8358; 7,500",
+      "img":"https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
    }
 ]

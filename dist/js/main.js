@@ -47,14 +47,16 @@ class UI {
       const productDiv = document.createElement('div');
       productDiv.classList.add('product');
       productDiv.innerHTML = `
-               <h6>-30%</h6>
-               <img src="${deal.img}" alt="${deal.title}"/>
-               <div class="details">
-                  <small>${deal.title}</small>
-                  <h4>${deal.reducedPrice}</h4>
-                  <small>${deal.price}</small>
-               </div>
-            `;
+         <a href ="https://jumia.com/${deal.title}.com">
+            <h6>-30%</h6>
+            <img src="${deal.img}" alt="${deal.title}"/>
+            <div class="details">
+               <small>${deal.title}</small>
+               <h4>${deal.reducedPrice}</h4>
+               <small>${deal.price}</small>
+            </div>
+         </a>
+      `;
 
       // Append to the TOP SECTION DEALS IN THE HTML
       topSellingSection.appendChild(productDiv);
@@ -65,13 +67,15 @@ class UI {
       const productDiv = document.createElement('div');
       productDiv.classList.add('product');
       productDiv.innerHTML = `
-               <h6>-30%</h6>
-               <img src="${deal.img}" alt="${deal.title}"/>
-               <div class="details">
-                  <small>${deal.title}</small>
-                  <h4>${deal.reducedPrice}</h4>
-                  <small>${deal.price}</small>
-               </div>
+         <a href ="https://jumia.com/${deal.title}.com">
+            <h6>-30%</h6>
+            <img src="${deal.img}" alt="${deal.title}"/>
+            <div class="details">
+               <small>${deal.title}</small>
+               <h4>${deal.reducedPrice}</h4>
+               <small>${deal.price}</small>
+            </div>
+         </a>
             `;
 
       // Append to the TOP SECTION DEALS IN THE HTML
@@ -83,13 +87,15 @@ class UI {
       const productDiv = document.createElement('div');
       productDiv.classList.add('product');
       productDiv.innerHTML = `
-               <h6>-30%</h6>
-               <img src="${deal.img}" alt="${deal.title}"/>
-               <div class="details">
-                  <small>${deal.title}</small>
-                  <h4>${deal.reducedPrice}</h4>
-                  <small>${deal.price}</small>
-               </div>
+         <a href ="https://jumia.com/${deal.title}.com">
+            <h6>-30%</h6>
+            <img src="${deal.img}" alt="${deal.title}"/>
+            <div class="details">
+               <small>${deal.title}</small>
+               <h4>${deal.reducedPrice}</h4>
+               <small>${deal.price}</small>
+            </div>
+         </a>
             `;
 
       // Append to the TOP SECTION DEALS IN THE HTML
@@ -101,13 +107,15 @@ class UI {
       const productDiv = document.createElement('div');
       productDiv.classList.add('product');
       productDiv.innerHTML = `
-               <h6>-30%</h6>
-               <img src="${deal.img}" alt="${deal.title}"/>
-               <div class="details">
-                  <small>${deal.title}</small>
-                  <h4>${deal.reducedPrice}</h4>
-                  <small>${deal.price}</small>
-               </div>
+         <a href ="https://jumia.com/${deal.title}.com">
+            <h6>-30%</h6>
+            <img src="${deal.img}" alt="${deal.title}"/>
+            <div class="details">
+               <small>${deal.title}</small>
+               <h4>${deal.reducedPrice}</h4>
+               <small>${deal.price}</small>
+            </div>
+         </a>
             `;
 
       // Append to the TOP SECTION DEALS IN THE HTML
@@ -119,13 +127,15 @@ class UI {
       const productDiv = document.createElement('div');
       productDiv.classList.add('product');
       productDiv.innerHTML = `
-               <h6>-30%</h6>
-               <img src="${deal.img}" alt="${deal.title}"/>
-               <div class="details">
-                  <small>${deal.title}</small>
-                  <h4>${deal.reducedPrice}</h4>
-                  <small>${deal.price}</small>
-               </div>
+         <a href ="https://jumia.com/${deal.title}.com">
+            <h6>-30%</h6>
+            <img src="${deal.img}" alt="${deal.title}"/>
+            <div class="details">
+               <small>${deal.title}</small>
+               <h4>${deal.reducedPrice}</h4>
+               <small>${deal.price}</small>
+            </div>
+         </a>
             `;
 
       // Append to the TOP SECTION DEALS IN THE HTML
@@ -137,13 +147,15 @@ class UI {
       const productDiv = document.createElement('div');
       productDiv.classList.add('product');
       productDiv.innerHTML = `
-               <h6>-30%</h6>
-               <img src="${deal.img}" alt="${deal.title}"/>
-               <div class="details">
-                  <small>${deal.title}</small>
-                  <h4>${deal.reducedPrice}</h4>
-                  <small>${deal.price}</small>
-               </div>
+         <a href ="https://jumia.com/${deal.title}.com">
+            <h6>-30%</h6>
+            <img src="${deal.img}" alt="${deal.title}"/>
+            <div class="details">
+               <small>${deal.title}</small>
+               <h4>${deal.reducedPrice}</h4>
+               <small>${deal.price}</small>
+            </div>
+         </a>
             `;
 
       // Append to the TOP SECTION DEALS IN THE HTML
@@ -155,13 +167,15 @@ class UI {
       const productDiv = document.createElement('div');
       productDiv.classList.add('product');
       productDiv.innerHTML = `
-               <h6>-30%</h6>
-               <img src="${deal.img}" alt="${deal.title}"/>
-               <div class="details">
-                  <small>${deal.title}</small>
-                  <h4>${deal.reducedPrice}</h4>
-                  <small>${deal.price}</small>
-               </div>
+         <a href ="https://jumia.com/${deal.title}.com">
+            <h6>-30%</h6>
+            <img src="${deal.img}" alt="${deal.title}"/>
+            <div class="details">
+               <small>${deal.title}</small>
+               <h4>${deal.reducedPrice}</h4>
+               <small>${deal.price}</small>
+            </div>
+         </a>
             `;
 
       // Append to the TOP SECTION DEALS IN THE HTML
@@ -173,13 +187,15 @@ class UI {
       const productDiv = document.createElement('div');
       productDiv.classList.add('product');
       productDiv.innerHTML = `
-               <h6>-30%</h6>
-               <img src="${deal.img}" alt="${deal.title}"/>
-               <div class="details">
-                  <small>${deal.title}</small>
-                  <h4>${deal.reducedPrice}</h4>
-                  <small>${deal.price}</small>
-               </div>
+         <a href ="https://jumia.com/${deal.title}.com">
+            <h6>-30%</h6>
+            <img src="${deal.img}" alt="${deal.title}"/>
+            <div class="details">
+               <small>${deal.title}</small>
+               <h4>${deal.reducedPrice}</h4>
+               <small>${deal.price}</small>
+            </div>
+         </a>
             `;
 
       // Append to the TOP SECTION DEALS IN THE HTML
@@ -306,4 +322,26 @@ function displayMegaClearanceSection() {
             UI.displayMegaClearance(deal);
          });
       });
+}
+
+// Search Products
+const searchInputForm = document.querySelector('.header-search-form');
+const searchInput = document.querySelector('.search-input');
+searchInput.addEventListener('keyup', searchProducts);
+
+function searchProducts(e) {
+   const searchText = searchInput.value.toLowerCase();
+
+   // Grab all th Product
+   const products = document.querySelectorAll('.product');
+   Array.from(products).forEach((product) => {
+      const productName =
+         product.children[0].children[2].children[0].textContent;
+
+      if (productName.toLowerCase().indexOf(searchText) != -1) {
+         product.style.opacity = '1';
+      } else {
+         product.style.opacity = '0.1';
+      }
+   });
 }
